@@ -7,21 +7,21 @@ var Call = function(toNUM){
 
   client.makeCall({to: toNUM, from: "+442033897525", url: "/voice" });
 
-}
+};
 
 app.get("/Hello", function(req, res){
 
+ res.send("vh");
 
-
-})
+});
 
 app.post("/voice", function(req, res){
 
- var ToNumber = req.body.To
+ var ToNumber = req.body.To;
 
- res.send()
+ res.send("<Response><Say>Say your message</Say><Record  maxLength=20/></Response>");
 
-})
+});
 
 
 
