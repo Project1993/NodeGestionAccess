@@ -1,7 +1,7 @@
 var express = require ("express");
 var app = express();
-//var twilio = require ("twilio");
-//var client = twilio.RestClient('AC1c4548dbab6cc1034acaacdc6b2db95e', '38d4b825a54df53631ae80daf0ac3a41');
+var twilio = require ("twilio");
+var client = twilio.RestClient('AC1c4548dbab6cc1034acaacdc6b2db95e', '38d4b825a54df53631ae80daf0ac3a41');
 
 var Call = function(toNUM){
 
